@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #06FFFF;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #06FFFF;
+}
+
+/* Hide watermark links */
+a.spline-watermark {
+  display: none !important;
+}
+
+/* Scramble text style */
+#scramble {
+  font-weight: lighter !important;
+}
+
+/* Header Font Family */
+h1, h2, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
