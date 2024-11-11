@@ -1,9 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaGripLines } from "react-icons/fa";
+
 const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  // Function to handle scroll events
+  const handleScroll = () => {
+    if (window.scrollY > lastScrollY) {
+      // Scrolling down
+      setShowNavbar(false);
+    } else {
+      // Scrolling up
+      setShowNavbar(true);
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
     <div>
-      <div className="fixed transition-all 1s w-full flex z-40 p-7 lg:px-16 md:px-10 px-5 justify-between items-center text-white bg-transparent">
+      <div
+        className={`fixed transition-transform duration-300 w-full flex z-40 p-7 lg:px-16 md:px-10 px-5 justify-between items-center text-white ${
+          showNavbar ? "translate-y-0" : "-translate-y-full"
+        } bg-transparent`}
+      >
         <svg
           width={100}
           viewBox="0 0 120 27"
@@ -104,7 +133,7 @@ const Navbar = () => {
 
         {/* Menu Button */}
         <button className="border border-[#06FFFF] bg-gray-950 text-[#06FFFF] uppercase px-7 py-3 rounded-lg flex items-center gap-7">
-          Menu <FaGripLines className="size-7" />{" "}
+          Menu <FaGripLines className="size-7" />
         </button>
       </div>
     </div>

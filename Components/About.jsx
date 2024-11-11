@@ -4,7 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className="flex flex-col lg:flex-row text-white pb-16 xl:pt-40 md:pt-32 pt-28 lg:px-16 md:px-10 px-5 space-y-8 lg:space-y-0">
+    <div className="relative flex flex-col lg:flex-row text-white pb-16 xl:py-40 md:py-32 py-28 lg:px-16 md:px-10 px-5 space-y-8 lg:space-y-0">
       {/* About Us section Image */}
       <div className="flex justify-center lg:justify-start lg:w-1/2">
         <Image

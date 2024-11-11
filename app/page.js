@@ -5,8 +5,11 @@ import Navbar from '@/Components/Navbar';
 import LandingPage from '@/Components/LandingPage';
 import About from '@/Components/About';
 import Services from '@/Components/Services';
+import Technologies from '@/Components/Technologies';
+import Principles from '@/Components/Principles';
 
 export default function Page() {
+
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -22,11 +25,13 @@ export default function Page() {
       {isLoading ? (
         <LoadingScreen/>
       ) : (
-        <main className="bg-[#050505] overflow-x-hidden scroll-smooth">
+        <main className="bg-[#050505]">
           <Navbar/>
           <LandingPage/>
           <About/>
           <Services/>
+          <Technologies/>
+          <Principles/>
         </main>
       )}
     </>
