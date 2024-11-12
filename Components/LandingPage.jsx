@@ -10,7 +10,7 @@ const LandingPage = () => {
       {/* Background Video */}
       <div className="absolute top-0 lg:-right-16 md:-right-28 -right-32 h-full flex items-center">
         <video
-          className="lg:h-full md:h-3/4 h-3/5"
+          className="h-3/5"
           autoPlay
           muted
           playsInline

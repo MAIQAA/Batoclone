@@ -11,14 +11,14 @@ export default function Page() {
 
 
   return (
-        <main className="bg-[#050505]">
-          <Navbar/>
-          <LandingPage/>
-          <About/>
-          <Services/>
-          <Technologies/>
-          <Principles/>
-          <Outsourcing/>
-        </main>
+    <main className="bg-[#050505]">
+      <Navbar />
+      <LandingPage />
+      <About />
+      <Services />
+      <Technologies />
+      <Principles />
+      <Outsourcing />
+    </main>
   );
 }
