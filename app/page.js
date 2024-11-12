@@ -7,6 +7,7 @@ import About from '@/Components/About';
 import Services from '@/Components/Services';
 import Technologies from '@/Components/Technologies';
 import Principles from '@/Components/Principles';
+import Outsourcing from '@/Components/Outsourcing';
 
 export default function Page() {
 
@@ -32,6 +33,7 @@ export default function Page() {
           <Services/>
           <Technologies/>
           <Principles/>
+          <Outsourcing/>
         </main>
       )}
     </>

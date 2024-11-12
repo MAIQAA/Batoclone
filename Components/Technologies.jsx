@@ -28,7 +28,7 @@ const Technologies = () => {
 
   return (
     <div className="relative grid justify-center text-white xl:py-40 md:py-32 py-28 lg:px-16 md:px-10 px-5 space-y-10">
-      <h1 className="uppercase text-5xl text-center mb-10">Technologies.</h1>
+      <h1 className="uppercase text-5xl text-center mb-10 animate-tilt-in-bottom-1">Technologies.</h1>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-10 w-full">
         {logos.map((logo) => (

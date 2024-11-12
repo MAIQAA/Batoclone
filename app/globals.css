@@ -18,13 +18,13 @@ body::-webkit-scrollbar {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #06FFFF;
+  background: #06ffff;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #06FFFF;
+  background: #06ffff;
 }
 
 /* Hide watermark links */
@@ -38,13 +38,17 @@ a.spline-watermark {
 }
 
 /* Header Font Family */
-h1, h2, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
 }
 
-.principles{
-  font-family: 'Poppins', sans-serif;
+.principles {
+  font-family: "Poppins", sans-serif;
 }
-p{
-  font-family: 'Poppins Thin', sans-serif;
+p {
+  font-family: "Poppins Light", sans-serif;
 }

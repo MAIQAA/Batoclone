@@ -16,14 +16,14 @@ const About = () => {
         />
       </div>
 
-      <div className="lg:w-1/2 xl:w-[45%] space-y-5 lg:space-y-8 pr-0 lg:pr-10 xl:pr-20">
+      <div className="lg:w-1/2 xl:w-[45%] space-y-5 lg:space-y-8 pr-0 lg:pr-10 xl:pr-20 ">
         {/* Title */}
         <h1 className="uppercase text-2xl sm:text-3xl xl:text-5xl animate-tilt-in-bottom-1">
           About Us.
         </h1>
 
         {/* Text */}
-        <div className="text-[#999] text-sm sm:text-base xl:text-lg space-y-3 lg:space-y-5 animate-tilt-in-bottom-2">
+        <div className="text-[#999] text-sm sm:text-base xl:text-xl space-y-3 lg:space-y-5 animate-tilt-in-bottom-2">
           <p>
             Founded in 2014 in Ukraine and already well-known in Europe, Bato is
             an agency of experts in web design and development.
@@ -39,7 +39,7 @@ const About = () => {
         </div>
 
         {/* Button */}
-        <button className="relative xl:!mt-16 !mt-7 xl:w-20 w-[75px] overflow-hidden flex justify-between items-center group uppercase">
+        <button className="relative xl:!mt-16 !mt-7 xl:w-20 w-[75px] overflow-hidden flex justify-between items-center group uppercase animate-tilt-in-bottom-3">
           About
           <BsArrowUpRight className="text-[#06FFFF] xl:text-xl text-sm group-hover:animate-slideAndReset size:5 xl:size-6" />
         </button>

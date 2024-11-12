@@ -19,8 +19,8 @@ const Services = () => {
       {/* Left Section */}
       <div className="self-start max-w-[40%] w-full text-xl sticky top-40 max-h-[100%] h-fit overflow-y-auto">
         <div className="space-y-10 text-white">
-          <h1 className="xl:text-5xl text-3xl uppercase">Our Services.</h1>
-          <p className="xl:text-xl text-base text-[#999]">
+          <h1 className="xl:text-5xl text-3xl uppercase animate-tilt-in-bottom-1">Our Services.</h1>
+          <p className="xl:text-xl text-base text-[#999] animate-tilt-in-bottom-2">
             Bato Web Agency takes pride in delivering inventive and adaptable
             solutions tailored to your specific requirements. As a boutique
             agency, we collaborate closely with our clients to establish an open
@@ -28,6 +28,7 @@ const Services = () => {
             surpasses your expectations.
           </p>
           <Image
+          className="animate-tilt-in-bottom-3"
             src="/clutch3.png"
             width={120}
             height={50}
@@ -42,13 +43,10 @@ const Services = () => {
           {items.map((item) => (
             <h1
               key={item.id}
-              className="bg-[#050505] relative z-10 flex justify-between items-center overflow-hidden p-4 xl:p-7 border border-gray-400 xl:text-3xl text-lg text-white group"
+              className="bg-[#050505] relative z-10 flex justify-between items-center overflow-hidden p-4 xl:p-7 border border-gray-400 xl:text-3xl text-lg text-white group animate-tilt-in-bottom-1"
             >
               <span className="relative">{item.name}</span>
-              <BsArrowDown
-                className="relative"
-                aria-label="Expand Service"
-              />
+              <BsArrowDown className="relative" aria-label="Expand Service" />
 
               {/* Border Animation */}
               <span className="absolute right-0 top-0 h-0 w-0 border-r-2 border-[#06FFFF] transition-all duration-500 group-hover:h-full"></span>
