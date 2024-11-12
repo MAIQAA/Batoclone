@@ -11,21 +11,21 @@ import Outsourcing from '@/Components/Outsourcing';
 
 export default function Page() {
 
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 2000);
 
-    return () => clearTimeout(timer); 
-  }, []);
+  //   return () => clearTimeout(timer); 
+  // }, []);
 
   return (
     <>
-      {isLoading ? (
+      {/* {isLoading ? (
         <LoadingScreen/>
-      ) : (
+      ) : ( */}
         <main className="bg-[#050505]">
           <Navbar/>
           <LandingPage/>
@@ -35,7 +35,7 @@ export default function Page() {
           <Principles/>
           <Outsourcing/>
         </main>
-      )}
+      {/* )} */}
     </>
   );
 }
