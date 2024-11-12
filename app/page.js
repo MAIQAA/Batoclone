@@ -1,6 +1,6 @@
 "use client"
-import { useState, useEffect } from 'react';
-import LoadingScreen from '../components/LoadingScreen';
+// import { useState, useEffect } from 'react';
+// import LoadingScreen from '../components/LoadingScreen';
 import Navbar from '@/Components/Navbar';
 import LandingPage from '@/Components/LandingPage';
 import About from '@/Components/About';
