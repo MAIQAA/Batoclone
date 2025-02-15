@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@dilrukr/react-text-scramble": "^1.0.5",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "next": "15.0.2",

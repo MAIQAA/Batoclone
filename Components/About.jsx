@@ -26,7 +26,7 @@ const About = () => {
         <div className="text-[#999] text-sm sm:text-base xl:text-xl space-y-3 lg:space-y-5 animate-tilt-in-bottom-2">
           <p>
             Founded in 2014 in Ukraine and already well-known in Europe, Bato is
-            an agency of experts in web design and development.
+            an agency of experts in web desig and development.
           </p>
           <p>
             We create websites of any type from scratch, ready to be used by our
